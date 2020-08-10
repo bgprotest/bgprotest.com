@@ -1,0 +1,26 @@
+<div id="demands-page" class="container align-items-center">
+    <div class="row">
+        <div class="col section-title">
+            <h1>
+                {{ 'navigation.demands' | translate }}
+            </h1>
+            <mat-divider></mat-divider>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-accordion>
+                <mat-expansion-panel *ngFor="let demand of demands">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{ 'demands.' + demand.id + '.title' | translate }}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>
+                        {{ 'demands.' + demand.id + '.text' | translate }}
+                    </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+</div>
