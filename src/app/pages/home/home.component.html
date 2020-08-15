@@ -1,9 +1,9 @@
 <div id="home-page" class="container align-items-center">
-    <div class="row">
+    <div class="row" *ngIf="imagesSources">
         <div class="col">
-            <slideshow [imageUrls]="imageSources"
+            <slideshow [imageUrls]="imagesSources"
             [autoPlay]="true"
-            [lazyLoad]="imageSources?.length > 1"
+            [lazyLoad]="imagesSources?.length > 1"
             [autoPlayWaitForLazyLoad]="true">
             </slideshow>
             <span id="moto" class="text-center">

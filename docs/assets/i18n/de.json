@@ -6,30 +6,10 @@
         "abroad": "Ausland",
         "facts": "Fakten"
     },
-    "city": {
-        "Berlin": "Berlin",
-        "London": "London"
-    },
-    "country": {
-        "Germany": "Deutschland",
-        "United_Kingdom": "Vereinigtes Königreich"
-    },
-    "demands": {
-        "boiko": {
-            "title": "Resignation of the current PM Boiko Borissov",
-            "text": "Explain in more details here"
-        },
-        "geshev": {
-            "title": "Resignation of the current Chief Prosecutor Ivan Geshev",
-            "text": "Explain in more details here"
-        },
-        "judical_reform": {
-            "title": "Immediate Judical Reform",
-            "text": "Explain in more details here"
-        },
-        "early_voting": {
-            "title": "Eerly Voting",
-            "text": "Explain in more details here"
-        }
+    "overview": {
+        "startDateSubText": "Datum der ersten Protesten",
+        "citiesHomeSubText": "Staedten im Land",
+        "citiesAbroadSubText": "Staedten im Ausland",
+        "learnMore": "Lern mehr"
     }
 }

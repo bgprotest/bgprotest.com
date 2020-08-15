@@ -57,7 +57,6 @@ export class NavbarComponent implements OnInit {
   }
 
   langChanged(event): void {
-    console.log(event);
     this.translate.use(event.value.code);
   }
 

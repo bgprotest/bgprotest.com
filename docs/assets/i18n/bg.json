@@ -6,30 +6,10 @@
         "abroad": "Чужбина",
         "facts": "Факти"
     },
-    "city": {
-        "Berlin": "Берлин",
-        "London": "Лондон"
-    },
-    "country": {
-        "Germany": "Германия",
-        "United_Kingdom": "Обединеното Кралство"
-    },
-    "demands": {
-        "boiko": {
-            "title": "Resignation of the current PM Boiko Borissov",
-            "text": "Explain in more details here"
-        },
-        "geshev": {
-            "title": "Resignation of the current Chief Prosecutor Ivan Geshev",
-            "text": "Explain in more details here"
-        },
-        "judical_reform": {
-            "title": "Immediate Judical Reform",
-            "text": "Explain in more details here"
-        },
-        "early_voting": {
-            "title": "Eerly Voting",
-            "text": "Explain in more details here"
-        }
+    "overview": {
+        "startDateSubText": "Начална дата на протестите",
+        "citiesHomeSubText": "Градове в страната",
+        "citiesAbroadSubText": "Градове в чужбина",
+        "learnMore": "Научи повече"
     }
 }

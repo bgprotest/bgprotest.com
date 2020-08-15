@@ -1,5 +1,5 @@
-<div id="overview-page" class="container align-items-center">
-    <div class="row">
+<div id="overview-page" class="container-fluid d-flex h-100 flex-column">
+    <div class="row w-100">
         <div class="col section-title">
             <h1>
                 {{ 'navigation.overview' | translate }}
@@ -7,11 +7,49 @@
             <mat-divider></mat-divider>
         </div>
     </div>
-    <div class="row">
-        <!-- <div *ngFor="let abroadCard of abroadCards" class="col-12 col-sm-6 col-md-3">
-            <app-abroad-card [data]="abroadCard">
+    <div *ngIf="overview && tiles"
+    class="row flex-grow-1 justify-content-center text-center text-lg-left align-items-center">
+        <div class="col-12 col-lg-6">
+            <mat-grid-list cols="4" rowHeight="150px">
+                <mat-grid-tile
+                    class="overview-tile"
+                    *ngFor="let tile of tiles"
+                    [colspan]="tile.cols"
+                    [rowspan]="tile.rows"
+                    [style.background]="tile.color">
+                  
+                    <a href="{{ tile.href }}">
+                        <div class="text-center">
+                            <h3 class="font-weight-bold">
+                                {{ tile.text }}
+                            </h3>
+        
+                            <p>
+                                {{ 'overview.' + tile.subText | translate }}
+                            </p>
+                        </div>
+                    </a>
 
-            </app-abroad-card>
-        </div> -->
+                </mat-grid-tile>
+              </mat-grid-list>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="font-weight-bold">
+                {{ overview['title'][lang] }}
+            </h1>
+
+            <p class="font-weight-bold">
+                {{ overview['subtitle'][lang] }}
+            </p>
+  
+            <p class="text-muted">
+                {{ overview['text'][lang] }}
+            </p>
+  
+            <a class="font-weight-bold" href="#facts-page" >
+                {{ 'overview.learnMore' | translate }}
+                <i class="fas fa-angle-right ml-2"></i>
+            </a>
+        </div>
     </div>
 </div>

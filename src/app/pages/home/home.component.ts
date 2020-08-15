@@ -1,4 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { GoogleSheetsService } from 'src/app/shared/google-sheets.service';
+import { GoogleSheetsURLs } from 'src/app/shared/google-sheets-data';
+import { parseSheetsData } from 'src/app/shared/google-sheets-parser';
+import { IImage } from 'ng-simple-slideshow';
+
+export interface Images {
+  imageLink: string,
+  creditText: string,
+  creditLink: string
+}
 
 @Component({
   selector: 'app-home',
@@ -7,15 +17,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  imageSources = [
-    'https://s2.reutersmedia.net/resources/r/?m=02&d=20200713&t=2&i=1525575840&r=LYNXNPEG6C1KG&w=1280',
-    'https://static.euronews.com/articles/stories/04/87/18/34/1440x810_cmsv2_8679c73e-105c-58aa-9512-dfcf547f9af6-4871834.jpg',
-    'https://www.economist.com/sites/default/files/20200725_EUP506.jpg',
-  ]
+  images: Images[];
+  imagesSources: IImage[];
 
-  constructor() { }
+  constructor(
+    private sheetsService: GoogleSheetsService,
+  ) {}
 
   ngOnInit(): void {
+    this.sheetsService.getJsonData(GoogleSheetsURLs.homeURL).subscribe(
+      data => {
+        this.images = parseSheetsData<Images>(data);
+        this.imagesSources = this.images.map(value => {
+          const mappedObj = {
+            url: value.imageLink,
+            caption: value.creditText,
+            clickAction: () => {
+              if (value.creditLink) {
+                window.open(value.creditLink)
+              }
+            }
+          };
+          return mappedObj
+        });
+        console.log(this.images);
+      }
+    );
   }
 
 }

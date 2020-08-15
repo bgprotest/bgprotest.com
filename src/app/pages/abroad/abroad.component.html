@@ -7,7 +7,7 @@
             <mat-divider></mat-divider>
         </div>
     </div>
-    <div class="row">
+    <div class="row" *ngIf="abroadCards">
         <div *ngFor="let abroadCard of abroadCards" class="col-12 col-sm-6 col-md-3">
             <app-abroad-card [data]="abroadCard">
 

@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="assets/bulgaria-map-flag-small.png" alt="" width="50">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">
-            <img src="assets/bulgaria-map-flag-small.png" alt="" width="50">
-        </a>
         <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
             <li class="nav-item" *ngFor="let navItem of navItems">
                 <a class="nav-link" href="{{navItem.link}}" routerLinkActive="active-link">
@@ -16,20 +16,20 @@
                 </a>
             </li>
         </ul>
-        <ul class="navbar-nav mr-2 mt-2 mt-lg-0">
-            <li>
-                <mat-form-field appearance="outline" class="no-bottom-padding">
-                    <mat-label>Language</mat-label>
-                    <mat-select [(ngModel)] = "selectedLanguage" (selectionChange)="langChanged($event)">
-                        <mat-select-trigger>
-                            <span [ngClass]="selectedLanguage ? selectedLanguage.icon : ''" class="flag-icon"></span>
-                        </mat-select-trigger>
-                        <mat-option *ngFor="let language of languages" [value]="language">
-                            <span [ngClass]="language.icon" class="flag-icon"></span>
-                        </mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </li>
-        </ul>
     </div>
+    <ul class="navbar-nav mr-2 mt-2 mt-lg-0">
+        <li>
+            <mat-form-field appearance="outline" class="no-bottom-padding">
+                <mat-label>Language</mat-label>
+                <mat-select [(ngModel)] = "selectedLanguage" (selectionChange)="langChanged($event)">
+                    <mat-select-trigger>
+                        <span [ngClass]="selectedLanguage ? selectedLanguage.icon : ''" class="flag-icon"></span>
+                    </mat-select-trigger>
+                    <mat-option *ngFor="let language of languages" [value]="language">
+                        <span [ngClass]="language.icon" class="flag-icon"></span>
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </li>
+    </ul>
 </nav>

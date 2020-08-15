@@ -13,6 +13,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { OverviewComponent } from './overview/overview.component';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { FactsComponent } from './facts/facts.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [DemandsComponent, MapComponent, HomeComponent, AbroadComponent, AbroadCardComponent, OverviewComponent, FactsComponent],
@@ -23,7 +24,8 @@ import { FactsComponent } from './facts/facts.component';
     MatButtonModule,
     TranslateModule,
     MatDividerModule,
-    SlideshowModule
+    SlideshowModule,
+    MatGridListModule
   ],
   exports: [
     DemandsComponent,
