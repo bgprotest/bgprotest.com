@@ -40,7 +40,6 @@ export class HomeComponent implements OnInit {
           };
           return mappedObj
         });
-        console.log(this.images);
       }
     );
   }
