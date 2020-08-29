@@ -8,7 +8,8 @@ export interface AbroadInfo {
   country: {},
   icon: string,
   imageLink: string,
-  facebookLink?: string
+  facebookLink?: string,
+  credit?: string,
 }
 
 @Component({

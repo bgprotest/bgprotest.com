@@ -14,6 +14,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { FactsComponent } from './facts/facts.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [DemandsComponent, MapComponent, HomeComponent, AbroadComponent, AbroadCardComponent, OverviewComponent, FactsComponent],
@@ -25,7 +26,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     TranslateModule,
     MatDividerModule,
     SlideshowModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTooltipModule
   ],
   exports: [
     DemandsComponent,
