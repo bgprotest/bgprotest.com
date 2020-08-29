@@ -9,15 +9,8 @@
     </div>
     <div *ngIf="overview && tiles"
     class="row flex-grow-1 justify-content-center text-center text-lg-left align-items-center">
-        <div class="col-12 col-lg-6">
-            <mat-grid-list cols="4" rowHeight="150px">
-                <mat-grid-tile
-                    class="overview-tile"
-                    *ngFor="let tile of tiles"
-                    [colspan]="tile.cols"
-                    [rowspan]="tile.rows"
-                    [style.background]="tile.color">
-                  
+        <div class="col-12 col-lg-6" id="overview-tile-wrap">
+            <div class="overview-tile" style="background-color: {{tile.color}}" *ngFor="let tile of tiles">                  
                     <a href="{{ tile.href }}">
                         <div class="text-center">
                             <h3 class="font-weight-bold">
@@ -29,9 +22,7 @@
                             </p>
                         </div>
                     </a>
-
-                </mat-grid-tile>
-              </mat-grid-list>
+            </div>
         </div>
         <div class="col-12 col-lg-6">
             <h1 class="font-weight-bold">
@@ -46,7 +37,7 @@
                 {{ overview['text'][lang] }}
             </p>
   
-            <a class="font-weight-bold" href="#facts-page" >
+            <a class="font-weight-bold" href="#learn-more-page" >
                 {{ 'overview.learnMore' | translate }}
                 <i class="fas fa-angle-right ml-2"></i>
             </a>

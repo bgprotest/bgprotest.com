@@ -46,9 +46,9 @@ export class OverviewComponent extends LangComponent implements OnInit {
       data => {
         this.overview = parseSheetsData<Overview>(data)[0];
         this.tiles = [
-          {text: this.overview.startDate, subText: 'startDateSubText', cols: 4, rows: 1, color: '#6C63FF'},
-          {text: this.overview.citiesHome, subText: 'citiesHomeSubText', cols: 2, rows: 1, color: '#F1F0FF'},
-          {text: this.overview.citiesAbroad, subText: 'citiesAbroadSubText', cols: 2, rows: 1, color: '#42D3A4', href: '#abroad-page'}
+          {text: this.overview.startDate, subText: 'startDateSubText', cols: 4, rows: 1, color: '#fff'},
+          {text: this.overview.citiesHome, subText: 'citiesHomeSubText', cols: 4, rows: 1, color: '#22b573'},
+          {text: this.overview.citiesAbroad, subText: 'citiesAbroadSubText', cols: 4, rows: 1, color: '#ff1d25', href: '#abroad-page'}
         ]
       }
     );

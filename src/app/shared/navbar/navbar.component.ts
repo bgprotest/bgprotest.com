@@ -18,19 +18,19 @@ export class NavbarComponent implements OnInit {
   navItems: NavItem[] = [
     {
       id: 'overview',
-      link: '#overview-page'
+      link: 'overview-page'
     },
     {
       id: 'demands',
-      link: '#demands-page'
+      link: 'demands-page'
     },
     {
       id: 'abroad',
-      link: '#abroad-page'
+      link: 'abroad-page'
     },
     {
-      id: 'facts',
-      link: '#facts-page'
+      id: 'learnMore',
+      link: 'learn-more-page'
     }
   ]
 
