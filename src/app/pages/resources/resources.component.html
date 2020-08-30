@@ -11,13 +11,13 @@
         <div class="col">
             <mat-list>
                 <mat-list-item *ngFor="let resource of resources">
-                    <mat-icon mat-list-icon>note</mat-icon>
-                    <div mat-line>
-                        <a href="{{resource.link}}" target="__blank">
-                            {{resource['name'][lang]}}
-                        </a>
-                    </div>
-                    <mat-divider></mat-divider>
+                        <mat-icon mat-list-icon>note</mat-icon>
+                        <div mat-line class="mat-list-content">
+                            <a href="{{resource.link}}" target="__blank">
+                                {{resource['name'][lang]}}
+                            </a>
+                        </div>
+                        <mat-divider></mat-divider>
                 </mat-list-item>
             </mat-list>
         </div>
