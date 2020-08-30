@@ -29,9 +29,13 @@ export class NavbarComponent implements OnInit {
       link: 'abroad-page'
     },
     {
-      id: 'learnMore',
-      link: 'learn-more-page'
-    }
+      id: 'resources',
+      link: 'resources-page'
+    },
+    // {
+    //   id: 'learnMore',
+    //   link: 'learn-more-page'
+    // }
   ]
 
   selectedLanguage;

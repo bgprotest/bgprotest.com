@@ -1,0 +1,25 @@
+<div id="resources-page" class="container align-items-center">
+    <div class="row">
+        <div class="col section-title">
+            <h1>
+                {{ 'navigation.resources' | translate }}
+            </h1>
+            <mat-divider></mat-divider>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-list>
+                <mat-list-item *ngFor="let resource of resources">
+                    <mat-icon mat-list-icon>note</mat-icon>
+                    <div mat-line>
+                        <a href="{{resource.link}}" target="__blank">
+                            {{resource['name'][lang]}}
+                        </a>
+                    </div>
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </div>
+    </div>
+</div>

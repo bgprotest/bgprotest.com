@@ -15,9 +15,13 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 import { FactsComponent } from './facts/facts.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ResourcesComponent } from './resources/resources.component';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
-  declarations: [DemandsComponent, MapComponent, HomeComponent, AbroadComponent, AbroadCardComponent, OverviewComponent, FactsComponent],
+  declarations: [DemandsComponent, MapComponent, HomeComponent, AbroadComponent, AbroadCardComponent, OverviewComponent, FactsComponent, ResourcesComponent],
   imports: [
     CommonModule,
     MatExpansionModule,
@@ -27,7 +31,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatDividerModule,
     SlideshowModule,
     MatGridListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatListModule,
+    MatIconModule
   ],
   exports: [
     DemandsComponent,
@@ -35,7 +41,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     HomeComponent,
     AbroadComponent,
     OverviewComponent,
-    FactsComponent
+    FactsComponent,
+    ResourcesComponent
   ]
 })
 export class PagesModule { }
