@@ -29,8 +29,6 @@ export class FooterComponent extends LangComponent implements OnInit {
     this.sheetsService.getJsonData(GoogleSheetsURLs.noticeURL).subscribe(
       data => {
         this.notice = parseSheetsData<Notice>(data)[0];
-
-        console.log(this.notice);
       }
     );
   }
