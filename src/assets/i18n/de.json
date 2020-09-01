@@ -5,12 +5,16 @@
         "demands": "Forderungen",
         "abroad": "Ausland",
         "resources": "Ressourcen",
-        "learnMore": "Lern mehr"
+        "learnMore": "Lern mehr",
+        "initiative": "#ЗаЕдно"
     },
     "overview": {
         "startDateSubText": "Datum der ersten Protesten",
         "citiesHomeSubText": "Staedten im Land",
         "citiesAbroadSubText": "Staedten im Ausland",
         "learnMore": "Lern mehr"
+    },
+    "general": {
+        "contact": "Kontakt"
     }
 }

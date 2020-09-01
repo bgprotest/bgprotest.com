@@ -5,12 +5,16 @@
         "demands": "Искания",
         "abroad": "Чужбина",
         "resources": "Ресурси",
-        "learnMore": "Научи повече"
+        "learnMore": "Научи повече",
+        "initiative": "#ЗаЕдно"
     },
     "overview": {
         "startDateSubText": "Начална дата на протестите",
         "citiesHomeSubText": "Градове в страната",
         "citiesAbroadSubText": "Градове в чужбина",
         "learnMore": "Научи повече"
+    },
+    "general": {
+        "contact": "Контакт"
     }
 }

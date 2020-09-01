@@ -18,10 +18,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ResourcesComponent } from './resources/resources.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { InitiativeComponent } from './initiative/initiative.component';
 
 
 @NgModule({
-  declarations: [DemandsComponent, MapComponent, HomeComponent, AbroadComponent, AbroadCardComponent, OverviewComponent, FactsComponent, ResourcesComponent],
+  declarations: [DemandsComponent, MapComponent, HomeComponent, AbroadComponent, AbroadCardComponent, OverviewComponent, FactsComponent, ResourcesComponent, InitiativeComponent],
   imports: [
     CommonModule,
     MatExpansionModule,
@@ -42,7 +43,8 @@ import { MatIconModule } from '@angular/material/icon';
     AbroadComponent,
     OverviewComponent,
     FactsComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    InitiativeComponent
   ]
 })
 export class PagesModule { }

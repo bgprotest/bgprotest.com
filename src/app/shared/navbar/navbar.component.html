@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
             <li class="nav-item" *ngFor="let navItem of navItems">
-                <a class="nav-link" routerLink="/" [fragment]="navItem.link" [ngClass]="{'active-link': navItem.link === currentNavItem}" (click)="currentNavItem = navItem.link">
+                <a class="nav-link" routerLink="/" [fragment]="navItem.link" [ngClass]="{'active-link': navItem.link === currentNavItem, 'initiative': navItem.id === 'initiative'}" (click)="currentNavItem = navItem.link">
                     <h2>
                         {{ 'navigation.' + navItem.id | translate }}
                     </h2>
