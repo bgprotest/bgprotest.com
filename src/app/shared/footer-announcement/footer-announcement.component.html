@@ -1,0 +1,12 @@
+<div class="container p-3 m-0 w-100 text-center" *ngIf="data">
+    <div class="row">
+        <div class="col">
+            <a class="m-0" href="{{data['link']}}" target="__blank">
+                {{ data['text'][lang] }}
+                <mat-icon>
+                    {{ data['icon'] }}
+                </mat-icon>
+            </a>
+        </div>
+    </div>
+</div>
