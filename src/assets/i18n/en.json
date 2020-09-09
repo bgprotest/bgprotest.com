@@ -6,7 +6,9 @@
         "abroad": "Abroad",
         "resources": "Resources",
         "learnMore": "Learn more",
-        "initiative": "#ЗаЕдно"
+        "initiative": "#ЗаЕдно",
+        "eu": "EU",
+        "media": "Medien"
     },
     "overview": {
         "startDateSubText": "Start date of the protests",
@@ -15,6 +17,7 @@
         "learnMore": "Learn more"
     },
     "general": {
-        "contact": "Contact"
+        "contact": "Contact",
+        "eu": "European Union"
     }
 }

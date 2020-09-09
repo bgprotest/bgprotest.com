@@ -6,7 +6,9 @@
         "abroad": "Чужбина",
         "resources": "Ресурси",
         "learnMore": "Научи повече",
-        "initiative": "#ЗаЕдно"
+        "initiative": "#ЗаЕдно",
+        "eu": "ЕС",
+        "media": "Медии"
     },
     "overview": {
         "startDateSubText": "Начална дата на протестите",
@@ -15,6 +17,7 @@
         "learnMore": "Научи повече"
     },
     "general": {
-        "contact": "Контакт"
+        "contact": "Контакт",
+        "eu": "Европейски Съюз"
     }
 }

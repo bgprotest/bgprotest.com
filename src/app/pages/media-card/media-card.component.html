@@ -1,0 +1,16 @@
+<a href="{{data.link}}">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar>
+                <span [ngClass]="data.countryIcon" class="flag-icon"></span>
+            </div>
+            <mat-card-title>
+                {{ data['title'][lang] }}
+            </mat-card-title>
+            <mat-card-subtitle>
+                {{ data['subtitle'][lang] }}
+            </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{data.imageLink}}" alt="Media coverage by {{data['title']['en']}}." matTooltip="Credit: {{data.credit || 'anonymous'}}">
+    </mat-card>
+</a>

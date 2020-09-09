@@ -25,6 +25,14 @@ export class NavbarComponent implements OnInit {
       link: 'demands-page'
     },
     // {
+    //   id: 'eu',
+    //   link: 'eu-page'
+    // },
+    {
+      id: 'media',
+      link: 'media-page'
+    },
+    // {
     //   id: 'initiative',
     //   link: 'initiative-page'
     // },

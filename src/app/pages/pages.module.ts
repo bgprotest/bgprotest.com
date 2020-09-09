@@ -19,10 +19,13 @@ import { ResourcesComponent } from './resources/resources.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { InitiativeComponent } from './initiative/initiative.component';
+import { EuComponent } from './eu/eu.component';
+import { MediaComponent } from './media/media.component';
+import { MediaCardComponent } from './media-card/media-card.component';
 
 
 @NgModule({
-  declarations: [DemandsComponent, MapComponent, HomeComponent, AbroadComponent, AbroadCardComponent, OverviewComponent, FactsComponent, ResourcesComponent, InitiativeComponent],
+  declarations: [DemandsComponent, MapComponent, HomeComponent, AbroadComponent, AbroadCardComponent, OverviewComponent, FactsComponent, ResourcesComponent, InitiativeComponent, EuComponent, MediaComponent, MediaCardComponent],
   imports: [
     CommonModule,
     MatExpansionModule,
@@ -44,7 +47,9 @@ import { InitiativeComponent } from './initiative/initiative.component';
     OverviewComponent,
     FactsComponent,
     ResourcesComponent,
-    InitiativeComponent
+    InitiativeComponent,
+    EuComponent,
+    MediaComponent
   ]
 })
 export class PagesModule { }

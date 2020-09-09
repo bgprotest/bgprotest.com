@@ -1,0 +1,17 @@
+<div id="media-page" class="container align-items-center">
+    <div class="row">
+        <div class="col section-title">
+            <h1>
+                {{ 'navigation.media' | translate }}
+            </h1>
+            <mat-divider></mat-divider>
+        </div>
+    </div>
+    <div class="row" *ngIf="mediaCards">
+        <div *ngFor="let mediaCard of mediaCards" class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
+            <app-media-card [data]="mediaCard">
+
+            </app-media-card>
+        </div>
+    </div>
+</div>
