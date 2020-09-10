@@ -9,12 +9,10 @@
     </div>
     <div *ngIf="eu"
     class="row flex-grow-1 justify-content-center text-center text-lg-left align-items-center">
-        <div class="col-12 col-lg-6 pb-3 pb-lg-0 pr-lg-5">
-            <h2>
-                {{ eu['text'][lang] }}
-            </h2>
+        <div class="col-12 col-lg-7 pb-3 pb-lg-0 pr-lg-5">
+            <h2 [innerHTML]="eu['text'][lang]"></h2>
         </div>
-        <div class="col-12 col-lg-6 p-5">
+        <div class="col-12 col-lg-5 p-5">
             <img src="https://europa.eu/european-union/sites/europaeu/files/docs/body/flag_yellow_high.jpg" alt="European flag">
         </div>
     </div>
